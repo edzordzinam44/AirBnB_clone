@@ -4,7 +4,6 @@
 import cmd
 import models
 from models.base_model import BaseModel
-from models import storage
 import json
 import re
 from models.user import User
