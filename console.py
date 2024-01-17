@@ -14,9 +14,15 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
-class_home= {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
-                  "Place": Place, "Review": Review,
-                  "State": State, "User": User}
+class_home = {
+    "BaseModel": BaseModel,
+    "User": User,
+    "Place": Place,
+    "Amenity": Amenity,
+    "City": City,
+    "Review": Review,
+    "State": State
+}
 
 
 class HBNBCommand(cmd.Cmd):
@@ -128,7 +134,7 @@ class HBNBCommand(cmd.Cmd):
             else:
                 setattr(storage.all()[new_str], arr[2], arr[3])
                 storage.save()
-    
+
     def do_count(self, line):
         """Print the count all class instances"""
         kclass = globals().get(line, None)
