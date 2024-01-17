@@ -61,6 +61,8 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, line):
         """Prints the string representation of an instance"""
+        arr = line.split()
+        
         if len(arr) < 1:
             print("** class name missing **")
         elif arr[0] not in class_home:
