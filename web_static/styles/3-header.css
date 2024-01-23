@@ -1,0 +1,9 @@
+/* Styles for header.css */
+header {
+	background-color: white;
+	height: 70px;
+	width: 100%;
+	border bottom: 1px solid #CCCCCC;
+	background-image: url('...image/logo.png');
+	background-position: 20px;
+}
