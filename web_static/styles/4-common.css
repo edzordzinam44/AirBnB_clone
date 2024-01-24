@@ -1,0 +1,12 @@
+/* Styles for 4-common.css */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: Circular, "Helvetica Neue",Helvatica,Arial,sans-serif;
+	color: #484848;
+}
+.contanier {
+	max-width: 100px;
+	margin: 30px auto;
+}
